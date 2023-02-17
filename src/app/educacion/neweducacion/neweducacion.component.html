@@ -60,24 +60,42 @@
                 <label for="educacion">Título</label>
                 <div class="input-group">
                   <input type="text" class="form-control" id="title" formControlName="title" [(ngModel)]="title"
+                  [ngClass]="{'is-invalid': Title?.errors && Title?.touched, 'is-valid': !Title?.errors && Title?.touched}"
                     placeholder="Título">
                 </div>
+                <div *ngIf="Title?.errors && Title?.touched">
+                  <p *ngIf="Title?.hasError('required')" class="text danger">
+                      El título es requerido.
+                  </p>
+              </div>
               </div>
 
               <div class="form-group">
                 <label for="porcentaje">Inicio</label>
                 <div class="input-group">
                   <input type="text" class="form-control" id="start" formControlName="start" [(ngModel)]="start"
+                  [ngClass]="{'is-invalid': Start?.errors && Start?.touched, 'is-valid': !Start?.errors && Start?.touched}"
                     type="text" placeholder="Desde">
                 </div>
+                <div *ngIf="Start?.errors && Start?.touched">
+                        <p *ngIf="Start?.hasError('required')" class="text danger">
+                            Fecha de inicio es requerida.
+                        </p>
+                    </div>
               </div>
 
               <div class="form-group">
                 <label for="educacion">Fin</label>
                 <div class="input-group">
                   <input type="text" class="form-control" id="end" formControlName="end" [(ngModel)]="end" type="text"
+                  [ngClass]="{'is-invalid': End?.errors && End?.touched, 'is-valid': !End?.errors && End?.touched}"
                     placeholder="Hasta">
                 </div>
+                <div *ngIf="End?.errors && End?.touched">
+                  <p *ngIf="End?.hasError('required')" class="text danger">
+                      Fecha de fin o si es actualidad es requerida.
+                  </p>
+              </div>
               </div>
 
               <div class="form-group">
