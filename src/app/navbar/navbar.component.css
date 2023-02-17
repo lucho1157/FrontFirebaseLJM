@@ -20,3 +20,7 @@
     width: 180px;
   }
 
+  *[_ngcontent-xai-c25] {
+    box-sizing: content-box;
+}
+

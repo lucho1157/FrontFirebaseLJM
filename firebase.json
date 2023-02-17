@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/cvangular",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

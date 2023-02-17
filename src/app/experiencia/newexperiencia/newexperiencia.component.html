@@ -99,14 +99,14 @@
           <div class="form-group">
             <label for="experiencia">Url Logo</label>
             <div class="input-group">
-              <input type="text" class="form-control" id="imglog" formControlName="imglog" [(ngModel)]="imglog" type="text" placeholder="Ingresar url logo">
+              <input type="text" class="form-control" id="imglog3" formControlName="imglog" [(ngModel)]="imglog" type="text" placeholder="Ingresar url logo">
             </div>
           </div>
 
           <div class="form-group">
             <label for="experiencia">ID</label>
             <div class="input-group">
-              <input type="text" class="form-control" formControlName="personaId" [(ngModel)]="personaId" [ngClass]="{'is-invalid': PersonaId?.errors && PersonaId?.touched, 'is-valid': !PersonaId?.errors && PersonaId?.touched}" id="personaId" type="text" placeholder="Ingresar ID">
+              <input type="text" class="form-control" formControlName="personaId" [(ngModel)]="personaId" [ngClass]="{'is-invalid': PersonaId?.errors && PersonaId?.touched, 'is-valid': !PersonaId?.errors && PersonaId?.touched}" id="personaId3" type="text" placeholder="Ingresar ID">
             </div>
             <div *ngIf="PersonaId?.errors && PersonaId?.touched">    
               <p *ngIf="PersonaId?.hasError('required')" class="text danger">

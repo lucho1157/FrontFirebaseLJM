@@ -57,7 +57,7 @@
             <div class="form-group">
                 <label for="proyecto">ID</label>
               <div class="input-group">
-                <input type="text" class="form-control" formControlName="personaId" [(ngModel)]="personaId" [ngClass]="{'is-invalid': PersonaId?.errors && PersonaId?.touched, 'is-valid': !PersonaId?.errors && PersonaId?.touched}" id="personaId" type="text" placeholder="Ingresar ID">
+                <input type="text" class="form-control" formControlName="personaId" [(ngModel)]="personaId" [ngClass]="{'is-invalid': PersonaId?.errors && PersonaId?.touched, 'is-valid': !PersonaId?.errors && PersonaId?.touched}" id="personaId5" type="text" placeholder="Ingresar ID">
               </div>
               <div *ngIf="PersonaId?.errors && PersonaId?.touched">    
                 <p *ngIf="PersonaId?.hasError('required')" class="text danger">

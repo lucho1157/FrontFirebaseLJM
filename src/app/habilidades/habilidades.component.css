@@ -1,6 +1,6 @@
 #Habilidades{
     background-image: url(src\assets\IMG\wallpaperbetter.com_1920x1080a.jpg);
-    font-family: Lobster;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-block: 25px;
     align-items: center;
     border:3px solid #3e0846cb;
@@ -9,8 +9,24 @@
 }
 
 h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: oblique bold 120% cursive;
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 0px;
+}
+
+.habil {
+  font-size: 150%;
+}
+
+@media(max-width:550px) {
+  h3 {
+      writing-mode:vertical-lr;
+      text-orientation:sideways;
+  }
+  .habil {
+    font-size: 11px;
+  }
 }
 
 .progress-circle {

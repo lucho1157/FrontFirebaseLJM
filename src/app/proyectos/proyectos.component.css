@@ -2,12 +2,29 @@
     background-image: url(/assets/IMG/wallpaperbetter.com_1920x1080a.jpg);
     font-family: Lobster;
     align-items: center;
-    border:3px solid rgba(10, 10, 10, 0.514);
+    border:3px solid #0a0a0a83;
     border-radius:22px;
+    color:#ebebeb
   }
 
   h3 {
-    margin-top: 20%;
+    margin-top: 5%;
+  }
+
+  .proye {
+    font-size: 150%;
+  }
+
+  @media(max-width:550px) {
+    h3 {
+        writing-mode:vertical-lr;
+        text-orientation:sideways;
+    }
+    .proye {
+      margin-left: 15px;
+      margin-top: 0px;
+      font-size: 11px;
+    }
   }
 
   .logo2 {
