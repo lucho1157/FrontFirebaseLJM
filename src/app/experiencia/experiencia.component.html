@@ -12,6 +12,7 @@
         <i class= "fa-solid fa-plus" type="button" data-bs-toggle="modal" data-bs-target="#newExp"></i>
         
       </button>
+
         <h3 class="exper"><u>Experiencia</u></h3>
         <img class="logo1" src="./assets/IMG/logoExper.jpg">
       
@@ -34,13 +35,15 @@
           </div>
           <div class="col-2">
             <img class="logo2" [src]="experience.imglog">
-            <button class= "btn btn-close-green edit skils1"
-
+      <button class= "btn btn-close-green edit skils1"
         *ngIf="mostrarDatos === true">
         <i class= "fa-solid fa-pencil" type="button" routerLink="/editexp/{{experience.id}}"></i>
-        
-        
       </button>
+
+      <button class= "btn btn-close-green edit skils2"
+        *ngIf="mostrarDatos === true">
+        <i class= "fa-solid fa-trash" type="button" (click)="onDelete(experience.id)"></i>
+        </button>
           </div>
         
       </div>

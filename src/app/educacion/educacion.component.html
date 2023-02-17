@@ -11,7 +11,7 @@
         </button>
 
 
-        <h3><u>Educacion</u></h3>
+        <h3 class="educ"><u>Educacion</u></h3>
         <img class="logo1" src="https://i.ibb.co/Qms18HX/imagen-EDU.png">
         
       </div>
@@ -32,6 +32,11 @@
         <button class= "btn btn-close-green edit skils1"
         *ngIf="mostrarDatos === true">
         <i class= "fa-solid fa-pencil" type="button" routerLink="/editeduca/{{school.id}}"></i>
+        </button>
+
+        <button class= "btn btn-close-green edit skils2"
+        *ngIf="mostrarDatos === true">
+        <i class= "fa-solid fa-trash" type="button" (click)="onDelete(school.id)"></i>
         </button>
       </div>
       

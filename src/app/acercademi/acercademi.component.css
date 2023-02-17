@@ -3,18 +3,18 @@
     background-image: url(/assets/IMG/monochrome-abstract-space-text-mathematics-brand-199275a-wallhere.com);
     min-height: 60vh;
     z-index: 0;
-    opacity: 0.;
     border:3px solid #000000;
     border-radius:22px;
 }
 
 .col-6.md-auto.me-auto{
     font-weight: 900;
-    color:#0e0d0d;
+    color:#f4e7e7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font: oblique bold 120% cursive;
     z-index: 2;
-    background-color:transparent;
     margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 h1.sobre-mi{
@@ -23,6 +23,11 @@ h1.sobre-mi{
     margin-top: -10%;
     color:#ffffff;
     font-weight: normal;
+}
+
+b {
+    color:#000000;
+    font-size: 120%;
 }
 
     @media (max-width: 1280px) {

@@ -14,7 +14,7 @@ export class EducacionComponent implements OnInit {
   mostrarDatos!: boolean;
   schoolsList: Educacion[]=[];
   
-  constructor(private datosPortfolio:PortfolioService, private educacionService:EducacionService,private activatedRouter: ActivatedRoute) { 
+  constructor(private datosPortfolio:PortfolioService, private educacionService:EducacionService, private activatedRouter: ActivatedRoute) { 
 
   }
 
@@ -37,6 +37,29 @@ export class EducacionComponent implements OnInit {
       console.log(data);
       this.schoolsList=data;
     });
+  }
+
+  onDelete(id: number) {
+    var valor = confirm("Eliminar Educación ?");
+    if (valor == true) {
+      this.educacionService.borrarEducacion(id).subscribe(
+        data => {
+          console.log(data);
+
+          alert("Educación eliminada");
+          window.location.reload();
+
+
+        }, err => {
+          alert("Educación eliminada");
+          window.location.reload();
+        }
+      )
+    } else {
+      alert("NO se eliminó educación")
+    }
+   
+
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Experiencia } from '../model/experiencia';
 import { PortfolioService } from '../portfolio.service';
 import { ExperienciaService } from '../serviciosmodel/experiencia.service';
@@ -12,7 +13,7 @@ export class ExperienciaComponent implements OnInit {
   mostrarDatos!: boolean;
   experiencesList:Experiencia[]=[];
 
-  constructor(private datosPortfolio:PortfolioService, private experienciaService:ExperienciaService) {
+  constructor(private datosPortfolio:PortfolioService, private experienciaService:ExperienciaService, private activatedRouter: ActivatedRoute) {
     
    }
 
@@ -35,6 +36,28 @@ export class ExperienciaComponent implements OnInit {
       console.log(data);
       this.experiencesList=data;
     });
+  }
+
+  onDelete(id: number) {
+    
+    var valor = confirm("Eliminar Experiencia ?");
+    if (valor == true) {
+      this.experienciaService.borrarExperiencia(id).subscribe(
+        data => {
+
+          alert("Experiencia eliminada");
+          window.location.reload();
+
+
+        }, err => {
+          alert("Experiencia eliminada")
+          window.location.reload();
+        }
+      )
+    } else {
+      alert("NO se eliminó experiencia")
+    }
+
   }
 
 }

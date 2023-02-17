@@ -6,6 +6,7 @@
     border-radius: 3%;
     border:3px solid #3e0846cb;
     border-radius:22px;
+    color:#ebebeb
 }
 
 h3 {
@@ -14,6 +15,7 @@ h3 {
 
 .exper {
   margin-left: -10px;
+  font-size: 150%;
 }
 
 @media(max-width:550px) {
@@ -90,6 +92,11 @@ button.btn.btn-close-green.edit.skils1 {
   margin-right: 5%;
 }
 
+button.btn.btn-close-green.edit.skils2 {
+  float: left;
+  margin-right: 8%;
+}
+
 i.fa-solid.fa-pencil{
   color:rgb(228, 228, 238);
   
@@ -103,5 +110,13 @@ i.fa-solid.fa-plus{
   
 }
 i.fa-solid.fa-plus:hover{
+  color:rgb(7, 7, 77);
+}
+
+i.fa-solid.fa-trash{
+  color:rgb(228, 228, 238);
+  
+}
+i.fa-solid.fa-trash:hover{
   color:rgb(7, 7, 77);
 }

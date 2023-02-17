@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 html {
     font-size: 15px;
@@ -21,7 +19,7 @@ html {
 
 
 body{
-    background-image: url(assets/IMG/color-g711e0da9e_1920a.png);
+    background-image: url(https://i.ibb.co/44HgJb1/color-g711e0da9e-1920a.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 50vh;
@@ -41,10 +39,22 @@ body{
 }
 
 h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    font: oblique bold 120% cursive;
     color:#d9f3f3
 }
 
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  font: oblique bold 120% cursive;
+  color:#d9f3f3
+}
+
 .rojo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: oblique bold 120% cursive;
     margin-top: 20%;
     color:#f1f7f7;
     font-weight: normal;
