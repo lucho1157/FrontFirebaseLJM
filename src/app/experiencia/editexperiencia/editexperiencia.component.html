@@ -13,7 +13,7 @@
                 </p>
             </div>
             </div>
-            <label for="educacion"><h6>Nivel Académico</h6></label>
+            <label for="educacion"><h6>Puestos ocupados</h6></label>
             <input type="text" class="form-control mb-3" id="puesto1" formControlName="puesto1" [(ngModel)]="expe.puesto1" required [ngClass]="{'is-invalid': Puesto1?.errors && Puesto1?.touched, 'is-valid': !Puesto1?.errors && Puesto1?.touched}">
             <div *ngIf="Puesto1?.errors && Puesto1?.touched">    
                 <p *ngIf="Puesto1?.hasError('required')" class="text danger">

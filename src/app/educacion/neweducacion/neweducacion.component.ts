@@ -28,9 +28,9 @@ export class NeweducacionComponent implements OnInit {
       level:['',[Validators.required]],
       instituto:['',[Validators.required]],
       career:['', [Validators.required]],
-      title: [''],
-      start: [''],
-      end: [''],
+      title: ['', [Validators.required]],
+      start: ['', [Validators.required]],
+      end: ['', [Validators.required]],
       imglog: [''],
       personaId:['', [Validators.required, Validators.min(1), Validators.max(1)]],
    })
