@@ -14,6 +14,7 @@ h3 {
 .educ {
   margin-left: 10px;
   font-size: 150%;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 @media(max-width:550px) {
@@ -32,6 +33,9 @@ h3 {
   width: 80px;
   margin-top: 50px;
   opacity: 0.5;
+  border:3px solid #f4eeee;
+  border-radius: 20%!important;
+  box-shadow: 12px 12px 12px rgba(37, 13, 2, 0.671)
   
 }
 
@@ -52,6 +56,9 @@ h3 {
   float:right;
     width: 70px;
     margin-left: 140px;
+    border:3px solid #dbc4c483;
+    border-radius: 40%!important;
+    box-shadow: 12px 12px 12px rgba(37, 13, 2, 0.671)
 }
 
 @media (max-width: 787px) {
@@ -69,7 +76,7 @@ h3 {
 
 
 h6 {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.01rem;
 }
 
 button.btn.btn-close-green.edit.skils1 {
