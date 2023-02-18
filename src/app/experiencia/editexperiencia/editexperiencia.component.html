@@ -9,7 +9,7 @@
             <input type="text" class="form-control mb-12" id="empresa" formControlName="empresa" [(ngModel)]="expe.empresa" required [ngClass]="{'is-invalid': Empresa?.errors && Empresa?.touched, 'is-valid': !Empresa?.errors && Empresa?.touched}">
             <div *ngIf="Empresa?.errors && Empresa?.touched">    
                 <p *ngIf="Empresa?.hasError('required')" class="text danger">
-                El nivel académico es requerido.
+                El nombre de la empresa es requerido.
                 </p>
             </div>
             </div>
@@ -41,7 +41,7 @@
             <input type="text" class="form-control mb-3" id="end" formControlName="end" [(ngModel)]="expe.end" required [ngClass]="{'is-invalid': End?.errors && End?.touched, 'is-valid': !End?.errors && End?.touched}">
             <div *ngIf="End?.errors && End?.touched">    
                 <p *ngIf="End?.hasError('required')" class="text danger">
-                Fecha de fin es requerida.
+                Fecha de fin o actual es requerida.
                 </p>
               </div>
             <label for="educacion"><h6>ID de pertenencia</h6></label>  
