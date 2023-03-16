@@ -1,30 +1,40 @@
-# Cvangular
+# RepositorioFrontEnd
+Hola, éste es mi proyecto de portfolio :sweat_drops:
+
+## Descripción:
+
+​Comencé a hacer la nav-bar con boopstrap, linkeando booopstrap para la barra y el login, y fontawesome para los iconos. En el icono de user le agregué un modal para el login.
 
 Botones de edición se descubren al hacer click en ícono de login (en ventana modal con formulario reactivo).
 Se vuelven a ocultar haciendo click en logout y presionando "cerrar sesión".
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+Se colocó una imagen de fondo al body en styles.css y se prueba escribir en el body.
+​
+Se realiza el container del 'Acerca de' con boopstrap y css y se da formato.
 
-## Development server
+Se avanza con el HTML del portfolio y se agregan secciones con estilos, se corrige posición de banner a gusto.
+​
+Se completa información de secciones.
+​
+Se avanza en completar los modales y fomularios para los botones de edición.
+​
+Se trabaja en los estilos para que la pagina sea responsive y quede bien tanto en escritorio como versión pantalla de celular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Se crean los diferentes componentes para la realización del CRUD (con formularios reactivos e identificadores).
 
-## Code scaffolding
+Se realizan las tareas para la integración con el backend.
+​
+Se revisa código, y se afina para la preparación del deploy.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Construido con 🛠️
 
-## Build
+* Este proyecto se generó con Angular CLI versión 14.1.1.
+* HTML 5
+* CSS3
+* JS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Autor ✒️
+* **Morello, Luis José** - *Diseño y Desarrollo del Sistema*
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contacto 📱
+* Gmail: _luisgigio58@gmail.com_
