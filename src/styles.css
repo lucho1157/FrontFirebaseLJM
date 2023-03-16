@@ -1,36 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 
 html {
-    font-size: 15px;
+  font-size: 15px;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
   }
-  
-  @media (max-width: 1280px) {
-    html { font-size: 14px; }
+}
+
+@media (max-width: 787px) {
+  html {
+    font-size: 10px;
   }
-  
-  @media (max-width: 787px) {
-    html { font-size: 10px; }
-  }
-  
-  
-  @media (max-width: 576px) {
-    html { font-size: 8px; }
-  }
+}
 
 
-body{
-    background-image: url(https://i.ibb.co/44HgJb1/color-g711e0da9e-1920a.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    margin: 104px 1%;
+@media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+
+body {
+  background-image: url(https://i.ibb.co/44HgJb1/color-g711e0da9e-1920a.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  margin: 104px 1%;
 }
 
 @media(max-width:550px) {
   h3 {
-      writing-mode:vertical-lr;
-      text-orientation:sideways;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
   }
+
   .exper {
     margin-left: 15px;
     margin-top: 0px;
@@ -39,36 +46,36 @@ body{
 }
 
 h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 120%;
-    font: oblique bold 120% cursive;
-    color:#d9f3f3
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  font: oblique bold 120% cursive;
+  color: #d9f3f3
 }
 
 h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 120%;
   font: oblique bold 120% cursive;
-  color:#d9f3f3
+  color: #d9f3f3
 }
 
-.rojo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font: oblique bold 120% cursive;
-    margin-top: 20%;
-    color:#f1f7f7;
-    font-weight: normal;
+.rojo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: oblique bold 120% cursive;
+  margin-top: 20%;
+  color: #f1f7f7;
+  font-weight: normal;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
-  
-  section[id] {
-    scroll-margin-top: 110px;
-  }
-  
-  #sobremi {
-    scroll-margin-top: 300px;
-  }
+  scroll-behavior: smooth;
+}
+
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+#sobremi {
+  scroll-margin-top: 300px;
+}
